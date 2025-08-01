@@ -1,6 +1,9 @@
-# 📦 Ingrown-Segmentation
+# 📦 Ingrowth-Segmentation-DSA-Plugin
 
-**Ingrown-Segmentation** is a Python package for image segmentation of ingrown structures in microscopy images of Cerebral Aneurysms. It is designed for high-resolution scientific image analysis with support for large formats, deep learning models, and preprocessing pipelines.
+**Ingrowth-Segmentation-DSA-Plugin** is a Python package for image segmentation of ingrown structures in microscopy images of Cerebral Aneurysms. It is designed for high-resolution scientific image analysis with support for large formats, deep learning models, and preprocessing pipelines.
+
+> ⚠️ **Note:** This plugin is intended for deployment and execution within a [Digital Slide Archive (DSA)](https://digitalslidearchive.github.io/) environment.  
+> It **cannot be run directly on a local machine** and is designed to be integrated with the DSA system using `girder-slicer-cli-web` and `ctk-cli`.
 
 ---
 
@@ -9,24 +12,18 @@
 - 🧠 Deep learning segmentation with [segmentation-models-pytorch](https://github.com/qubvel/segmentation_models.pytorch)
 - 🖼 Handles large microscopy images with `imageio`, `Pillow`, and `opencv-python`
 - 📊 Rich support for data handling via `pandas`, `openpyxl`, and `xlrd`
-- ⚙️ Ready for integration with `girder-client`, `girder-slicer-cli-web`, and `ctk-cli`
+- ⚙️ Seamless integration with `girder-client`, `girder-slicer-cli-web`, and `ctk-cli`
 - 🧪 Includes preprocessing and augmentation with `albumentations`
 
 ---
 
-## 🛠 Installation
+## 🛠 Installation (for development or DSA deployment)
 
-Install via `pip`:
-
-```bash
-pip install git+https://github.com/SarderLab/Ingrown-Segmentation.git
-```
-
-Or clone the repository and install manually:
+To install the plugin manually (for development or DSA configuration):
 
 ```bash
-git clone https://github.com/SarderLab/Ingrown-Segmentation.git && \
-cd Ingrown-Segmentation && \
+git clone https://github.com/SarderLab/Ingrowth-Segmentation-DSA-Plugin.git && \
+cd Ingrowth-Segmentation-DSA-Plugin && \
 pip install .
 ```
 
@@ -42,7 +39,7 @@ Ingrown/
 ├── ... (core segmentation modules)
 tests/
 setup.py
-README.rst
+README.md
 ```
 
 ---
@@ -63,16 +60,10 @@ Optional (commented in `setup.py`):
 
 ---
 
-## 💻 Usage Example
+## 💻 Usage
 
-```python
-from Ingrown import your_module
-
-# Example function call
-your_module.run_segmentation("path/to/image.tif")
-```
-
-> More examples and CLI usage will be added soon.
+This package is designed to be executed as a plugin inside the Digital Slide Archive (DSA) using the slicer CLI interface.  
+Local usage or direct script execution is **not supported**.
 
 ---
 
@@ -82,10 +73,9 @@ your_module.run_segmentation("path/to/image.tif")
 📧 [sayat.mimar@ufl.edu](mailto:sayat.mimar@ufl.edu)  
 🧪 Developed at [Computational Microscopy Imaging Laboratory](https://cmilab.nephrology.medicine.ufl.edu/), University of Florida
 
-
-- **Fatemeh Afsari**  
-  📧 [f.afsari@ufl.edu](f.afsari@ufl.edu)  
-  🧠 Developed at [Computational Microscopy Imaging Laboratory](https://cmilab.nephrology.medicine.ufl.edu/), University of Florida
+**Fatemeh Afsari**  
+📧 [f.afsari@ufl.edu](mailto:f.afsari@ufl.edu)  
+🧠 Developed at [Computational Microscopy Imaging Laboratory](https://cmilab.nephrology.medicine.ufl.edu/), University of Florida
 
 ---
 

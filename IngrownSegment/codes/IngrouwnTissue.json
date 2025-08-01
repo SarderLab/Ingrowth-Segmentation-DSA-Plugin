@@ -1,0 +1,34 @@
+{
+  "name": "Tissue Ingrowth",
+  "description": "Overlaying one item onto another",
+  "elements": [
+    {
+        "type": "image",
+      "girderId": "67533aa609e7b90c7680bd0c",
+      "opacity": 1,
+      "hasAlpha": true,
+      "transform": {
+        "xoffset":0,
+        "yoffset":0
+      }
+    }
+  ]
+}
+
+
+{
+	"name": "Tissue Ingrowth",
+	"description": "Overlaying one item onto another",
+	"elements": [
+	{
+		"type": "image",
+		"girderId": "None",
+		"opacity": 1,
+		"hasAlpha":true,
+		"transform": {
+			"xoffset":0,
+			"yoffset":0
+		}
+	}
+	]
+} 

@@ -10,7 +10,7 @@
 ## 🚀 Features
 
 - 🧠 Deep learning segmentation with [segmentation-models-pytorch](https://github.com/qubvel/segmentation_models.pytorch)
-- 🖼 Handles large microscopy images with `imageio`, `Pillow`, and `opencv-python`
+- 🖼 Handles large microscopy images with `opencv-python`
 - 📊 Rich support for data handling via `pandas`, `openpyxl`, and `xlrd`
 - ⚙️ Seamless integration with `girder-client`, `girder-slicer-cli-web`, and `ctk-cli`
 - 🧪 Includes preprocessing and augmentation with `albumentations`
